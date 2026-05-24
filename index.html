@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
   </head>
   <body>
     <!-- #region header -->
@@ -451,6 +451,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
+
         <div class="footer-social-links">
           <p class="text">Social media</p>
           <ul class="footer-social-list">
@@ -484,8 +485,118 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <p class="footer-form-title">Subscribe</p>
+          <div class="footer-form-container">
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="footer-form-input"
+            />
+            <button type="submit" class="footer-form-btn">
+              <span class="footer-form-btn-span">Subscribe</span>
+              <svg width="24" height="24" class="footer-form-icon">
+                <use href="./images/icons.svg#icon-illustration" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region modal form -->
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg width="8" height="8" class="modal-close-btn">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+
+        <p class="form-title">Leave your contacts and we will call you back</p>
+
+        <ul class="form-list">
+          <li class="form-item">
+            <label for="form-name" class="form-label">Name</label>
+            <div class="form-input-content">
+              <input
+                id="form-name"
+                type="text"
+                class="form-input"
+                name="name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-form-name" />
+              </svg>
+            </div>
+          </li>
+
+          <li class="form-item">
+            <label for="form-phone" class="form-label">Phone</label>
+            <div class="form-input-content">
+              <input
+                id="form-phone"
+                type="tel"
+                class="form-input"
+                name="phone-number"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-form-phone" />
+              </svg>
+            </div>
+          </li>
+
+          <li class="form-item">
+            <label for="form-email" class="form-label">Email</label>
+            <div class="form-input-content">
+              <input
+                id="form-email"
+                type="email"
+                class="form-input"
+                name="email"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-form-email" />
+              </svg>
+            </div>
+          </li>
+
+          <li class="form-item">
+            <label for="form-comment" class="form-label">Comment</label>
+            <textarea
+              id="form-comment"
+              class="form-input form-textarea"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </li>
+        </ul>
+
+        <div class="form-checkbox-container">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="form-checkbox"
+            class="native-checkbox sr-only"
+          />
+          <label for="form-checkbox" class="form-checkbox">
+            <span class="custom-checkbox">
+              <svg width="10" height="8" class="check-mark">
+                <use href="./images/icons.svg#icon-check-mark" />
+              </svg>
+            </span>
+            <span class="form-checkbox-title"
+              >I accept the terms and conditions of the
+              <a href="#" class="checkbox-link">Privacy Policy</a>
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="form-button">Send</button>
+      </div>
+    </div>
+    <!-- #endregion modal form -->
   </body>
 </html>
