@@ -98,7 +98,7 @@
     border: 1px solid #FFFFFF;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 2;
     letter-spacing: 0.04em;
     border-radius: 4px;
     padding: 8px 16px;
@@ -119,6 +119,7 @@
 .footer-form-input:focus,
 .footer-form-input:hover {
     outline: none;
+    border-color: #31D0AA;
 }
 
 .footer-form-input:focus::placeholder,
