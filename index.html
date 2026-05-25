@@ -508,94 +508,98 @@
     <!-- #endregion footer -->
 
     <!-- #region modal form -->
-    <div class="backdrop" id="modal">
+    <div class="backdrop is-open" id="modal">
       <div class="modal">
-        <button type="button" class="modal-close">
-          <svg width="8" height="8" class="modal-close-btn">
-            <use href="./images/icons.svg#icon-close" />
-          </svg>
-        </button>
+        <form>
+          <button type="button" class="modal-close">
+            <svg width="8" height="8" class="modal-close-btn">
+              <use href="./images/icons.svg#icon-close" />
+            </svg>
+          </button>
 
-        <p class="form-title">Leave your contacts and we will call you back</p>
+          <p class="form-title">
+            Leave your contacts and we will call you back
+          </p>
 
-        <ul class="form-list">
-          <li class="form-item">
-            <label for="form-name" class="form-label">Name</label>
-            <div class="form-input-content">
-              <input
-                id="form-name"
-                type="text"
-                class="form-input"
-                name="name"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-form-name" />
-              </svg>
-            </div>
-          </li>
+          <ul class="form-list">
+            <li class="form-item">
+              <label for="form-name" class="form-label">Name</label>
+              <div class="form-input-content">
+                <input
+                  id="form-name"
+                  type="text"
+                  class="form-input"
+                  name="name"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-form-name" />
+                </svg>
+              </div>
+            </li>
 
-          <li class="form-item">
-            <label for="form-phone" class="form-label">Phone</label>
-            <div class="form-input-content">
-              <input
-                id="form-phone"
-                type="tel"
-                class="form-input"
-                name="phone-number"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-form-phone" />
-              </svg>
-            </div>
-          </li>
+            <li class="form-item">
+              <label for="form-phone" class="form-label">Phone</label>
+              <div class="form-input-content">
+                <input
+                  id="form-phone"
+                  type="tel"
+                  class="form-input"
+                  name="phone-number"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-form-phone" />
+                </svg>
+              </div>
+            </li>
 
-          <li class="form-item">
-            <label for="form-email" class="form-label">Email</label>
-            <div class="form-input-content">
-              <input
-                id="form-email"
-                type="email"
-                class="form-input"
-                name="email"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-form-email" />
-              </svg>
-            </div>
-          </li>
+            <li class="form-item">
+              <label for="form-email" class="form-label">Email</label>
+              <div class="form-input-content">
+                <input
+                  id="form-email"
+                  type="email"
+                  class="form-input"
+                  name="email"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-form-email" />
+                </svg>
+              </div>
+            </li>
 
-          <li class="form-item">
-            <label for="form-comment" class="form-label">Comment</label>
-            <textarea
-              id="form-comment"
-              class="form-input form-textarea"
-              name="comment"
-              placeholder="Text input"
-            ></textarea>
-          </li>
-        </ul>
+            <li class="form-item">
+              <label for="form-comment" class="form-label">Comment</label>
+              <textarea
+                id="form-comment"
+                class="form-textarea"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </li>
+          </ul>
 
-        <div class="form-checkbox-container">
-          <input
-            type="checkbox"
-            name="checkbox"
-            id="form-checkbox"
-            class="native-checkbox sr-only"
-          />
-          <label for="form-checkbox" class="form-checkbox">
-            <span class="custom-checkbox">
-              <svg width="10" height="8" class="check-mark">
-                <use href="./images/icons.svg#icon-check-mark" />
-              </svg>
-            </span>
-            <span class="form-checkbox-title"
-              >I accept the terms and conditions of the
-              <a href="#" class="checkbox-link">Privacy Policy</a>
-            </span>
-          </label>
-        </div>
+          <div class="form-checkbox-container">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="form-checkbox"
+              class="native-checkbox sr-only"
+            />
+            <label for="form-checkbox" class="form-checkbox">
+              <span class="custom-checkbox">
+                <svg width="10" height="8" class="check-mark">
+                  <use href="./images/icons.svg#icon-check-mark" />
+                </svg>
+              </span>
+              <span class="form-checkbox-title"
+                >I accept the terms and conditions of the
+                <a href="#" class="checkbox-link">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
 
-        <button type="submit" class="form-button">Send</button>
+          <button type="submit" class="form-button">Send</button>
+        </form>
       </div>
     </div>
     <!-- #endregion modal form -->
