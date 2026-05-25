@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-content {
@@ -76,6 +77,10 @@
 
 .footer-social-link .icon {
     fill: #F4F4FD;
+}
+
+.footer-form {
+    margin-left: auto;
 }
 
 .footer-form-title {
