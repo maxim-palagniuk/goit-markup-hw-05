@@ -13,14 +13,14 @@
 .team .list {   
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    justify-content: flex-start;
+    row-gap: 72px;
+    justify-content: center;
 }
 
 .team .item {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
-    width: 264px;
+    max-width: 264px;
 }
 
 .team-card-content {

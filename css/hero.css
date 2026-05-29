@@ -1,11 +1,18 @@
 .hero-section {
     background-color: #2E2F42;
-    background-image: linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url("../images/hero/hero-bg.jpg");
+    background-image: 
+    linear-gradient(180deg,
+    rgba(46, 47, 66, 0.7) 0%,
+    rgba(46, 47, 66, 0.7) 100%),
+    image-set(
+        url("../images/hero/mobile/hero-bg-m.jpg") 1x,
+        url("../images/hero/mobile/hero-bg-m@2x.jpg") 2x
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 188px 0px;
-    max-width: 1440px;
+    padding: 72px 0px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -19,7 +26,7 @@
     letter-spacing: 0.04em;
     border-radius: 4px;
     padding: 16px 32px;
-    margin: 48px auto;
+    margin: 72px auto;
     margin-bottom: 0;
     display: flex;
     align-items: center;

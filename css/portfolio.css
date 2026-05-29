@@ -11,15 +11,13 @@
 
 .portfolio .list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    column-gap: 24px;
+    flex-direction: column;
     row-gap: 48px;
     
 }
 
 .portfolio .item {
-    width: 360px;
+    max-width: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -30,31 +28,16 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio .item:hover .portfolio-hover-text-1, 
-.portfolio .item:hover .portfolio-hover-text-2,
-.portfolio .item:hover .portfolio-hover-text-3,
-.portfolio .item:hover .portfolio-hover-text-4,
-.portfolio .item:hover .portfolio-hover-text-5,
-.portfolio .item:hover .portfolio-hover-text-6 {  
+.portfolio .item:hover .portfolio-hover-text {  
     transform: translateY(0);
 }
 
-.portfolio-hover-card-1,
-.portfolio-hover-card-2,
-.portfolio-hover-card-3,
-.portfolio-hover-card-4,
-.portfolio-hover-card-5,
-.portfolio-hover-card-6 {
+.portfolio-hover-card {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-hover-text-1,
-.portfolio-hover-text-2,
-.portfolio-hover-text-3,
-.portfolio-hover-text-4,
-.portfolio-hover-text-5,
-.portfolio-hover-text-6 {
+.portfolio-hover-text {
     display: flex;
     justify-content: center;
     align-items: self-start;

@@ -8,15 +8,16 @@
 
 .features .list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    row-gap: 72px;
 }
 
 .features .item {
-    flex-basis: 264px;
+    max-width: 288px;
 }
 
-.features-icon-border {
-    display: flex;
+.features-icon-wrapper {
+    display: none;
     background-color: #F4F4Fd;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -29,17 +30,17 @@
 .features .subtitle {
     margin: 0;
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-
+    text-align: center;
 }
 
 .features .text {
     color: #434455;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em
