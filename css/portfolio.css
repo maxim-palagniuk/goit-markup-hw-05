@@ -82,3 +82,41 @@
     margin: 0;
     color: #434455;
 }
+
+@media screen and (min-width: 768px) {
+
+    .portfolio-section {
+        padding: 96px 0;
+    }
+
+    .portfolio .list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        justify-content: center;
+    }
+
+    .portfolio .item {
+        max-width: 356px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    
+    .portfolio-section {
+        padding: 120px 0;
+    }
+
+    .portfolio .list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        justify-content: center;
+    }
+
+    .portfolio .item {
+        max-width: 360px;
+    }
+}

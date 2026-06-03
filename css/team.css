@@ -73,3 +73,24 @@
 .team-social-link:focus {
     background-color: #404BBF;
 }
+
+@media screen and (min-width: 768px) {
+
+    .team-section {
+        padding: 96px 0;
+    }
+
+    .team .list {
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    
+    .team-section {
+        padding: 120px 0;
+    }
+
+
+}

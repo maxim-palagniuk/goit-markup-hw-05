@@ -1,18 +1,17 @@
-/* .header-section {} */
-
 .header {
     background-color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
-    /* height: 56px; */
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .header-logo {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
+    margin-right: 120px;
     padding-top: 16px;
     padding-bottom: 16px;
     font-family: "Raleway", sans-serif;
@@ -27,8 +26,8 @@
  /* #region navigation */
 
 .header-nav {
-    margin-right: 340px;
-    display: none;
+    display: flex;
+    flex-grow: 1;
 }
 
 .header-nav  .list {
@@ -47,6 +46,8 @@
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: center;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     position: relative;
@@ -77,20 +78,22 @@
 
 /* #region address */
 
-.header-address {
-    display: none;
-}
-
 .header-address  .list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
     color: #434455;
+}
+
+.header-address .item {
+    display: inline-flex;
 }
 
 .header-address  .link {
     font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -102,7 +105,7 @@
 /* #endregion address */
 
 .header-btn-mobile-menu {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
@@ -111,4 +114,46 @@
 .header-btn-icon {
     display: block;
     fill: #2E2F42;
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        margin: 0;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-address {
+        display: none;
+    }
+
+    .header-btn-mobile-menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .header-address .list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .header-address .link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }

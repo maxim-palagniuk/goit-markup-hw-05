@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
   </head>
   <body>
     <!-- #region header -->
@@ -59,6 +59,84 @@
       </div>
     </header>
     <!-- #endregion header -->
+
+    <!-- #region mobile menu -->
+    <div class="header-mobile-menu">
+      <div class="header-mobile-menu-container">
+        <button type="button" class="mobile-menu-close">
+          <svg width="8" height="8" class="mobile-menu-close-btn">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="list">
+            <li class="item">
+              <a href="#hero" class="link active-link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="#portfolio" class="link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="#team" class="link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-contacts">
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+              <li class="mobile-menu-address-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-menu-address-link active-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-item">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+              <a href="" class="mobile-menu-social-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion mobile menu -->
 
     <main>
       <!-- #region hero -->
@@ -355,8 +433,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-1-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-1-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-1-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-1-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -373,7 +451,10 @@
                       ./images/portfolio/mobile/portfolio-1-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-1-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-1-m.jpg"
+                    alt="portfolio-img-1"
+                  />
                 </picture>
 
                 <p class="portfolio-hover-text">
@@ -395,8 +476,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-2-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-2-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-2-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-2-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -413,7 +494,10 @@
                       ./images/portfolio/mobile/portfolio-2-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-2-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-2-m.jpg"
+                    alt="portfolio-img-2"
+                  />
                 </picture>
                 <p class="portfolio-hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -434,8 +518,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-3-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-3-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-3-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-3-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -452,7 +536,10 @@
                       ./images/portfolio/mobile/portfolio-3-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-3-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-3-m.jpg"
+                    alt="portfolio-img-3"
+                  />
                 </picture>
                 <p class="portfolio-hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -473,8 +560,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-4-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-4-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-4-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-4-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -491,7 +578,10 @@
                       ./images/portfolio/mobile/portfolio-4-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-4-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-4-m.jpg"
+                    alt="portfolio-img-4"
+                  />
                 </picture>
                 <p class="portfolio-hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -512,8 +602,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-5-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-5-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-5-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-5-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -530,7 +620,10 @@
                       ./images/portfolio/mobile/portfolio-5-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-5-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-5-m.jpg"
+                    alt="portfolio-img-5"
+                  />
                 </picture>
                 <p class="portfolio-hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -551,8 +644,8 @@
                   <source
                     media="(min-width: 1158px)"
                     srcset="
-                      ./images/portfolio/dekstop/portfolio-6-d.jpg    1x,
-                      ./images/portfolio/dekstop/portfolio-6-d@2x.jpg 2x
+                      ./images/portfolio/desktop/portfolio-6-d.jpg    1x,
+                      ./images/portfolio/desktop/portfolio-6-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -569,7 +662,10 @@
                       ./images/portfolio/mobile/portfolio-6-m@2x.jpg 2x
                     "
                   />
-                  <img src="./images/portfolio/mobile/portfolio-6-m.jpg" />
+                  <img
+                    src="./images/portfolio/mobile/portfolio-6-m.jpg"
+                    alt="portfolio-img-6"
+                  />
                 </picture>
                 <p class="portfolio-hover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -741,6 +837,7 @@
                   <use href="./images/icons.svg#icon-check-mark" />
                 </svg>
               </span>
+
               <span class="form-checkbox-title"
                 >I accept the terms and conditions of the
                 <a href="#" class="checkbox-link">Privacy Policy</a>

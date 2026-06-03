@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     background-color: #2E2F42;
     color: #F4F4FD;
 }
@@ -165,4 +165,67 @@
 
 .footer-form-icon {
     fill: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+        padding-left: 108px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+
+    .footer-social-links {
+        padding: 0;
+    }
+
+    .footer-social-links .text {
+        text-align: start;
+    }
+
+    .footer-form-title {
+        text-align: start;
+    }
+
+    .footer-form-container {
+        flex-direction: row;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .footer-form-input {
+        max-width: 264px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-section {
+        padding: 100px 0;
+    }
+
+    .footer {
+        padding-left: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .footer-social-links {
+        margin-right: 83px;
+    }
 }
