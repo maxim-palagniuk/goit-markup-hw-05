@@ -13,7 +13,7 @@
 }
 
 .features .item {
-    max-width: 288px;
+    width: 288px;
 }
 
 .features-icon-wrapper {
@@ -60,7 +60,7 @@
     }
 
     .features .item {
-        max-width: 356px;
+        width: 356px;
     }
 
     .features .subtitle {
@@ -81,7 +81,7 @@
     }
 
     .features .item {
-        max-width: 264px;
+        width: 264px;
     }
 
     .features-icon-wrapper {
