@@ -1,5 +1,5 @@
 .features-section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .features {
@@ -61,6 +61,10 @@
 
     .features .item {
         max-width: 356px;
+    }
+
+    .features .subtitle {
+        text-align: start;
     }
 }
 
