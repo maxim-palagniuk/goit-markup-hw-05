@@ -99,7 +99,7 @@
 }
 
 .mobile-menu-address-item .active-link {
-    color: #404BBF;
+    color: #4D5AE5;
 }
 
 .mobile-menu-address-item:first-child {
@@ -150,3 +150,15 @@
 }
 
 /* #endregion mobile-menu-social-list */
+
+@media screen and (min-width: 768px) {
+    .header-mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .header-mobile-menu {
+        display: none;
+    }
+}

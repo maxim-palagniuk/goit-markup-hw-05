@@ -109,7 +109,7 @@
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 .header-btn-icon {
